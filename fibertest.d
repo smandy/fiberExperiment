@@ -19,7 +19,7 @@ final class MyFiber : Fiber {
 
  private:
   void run() {
-    writefln("bzz Running %s %s", &this, state);
+    writefln("Running %s %s", &this, state);
     while ( true  ) {
       sw.ping();
       other.call();
